@@ -1,0 +1,142 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+}
+
+.Product{
+    background-color: rgb(237, 245, 217);
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    margin: 5px;
+    padding: 20px;
+    justify-content: space-evenly;
+    box-shadow: 2px 5px 4px rgb(60, 65, 1);
+    border-radius: 20px;
+}
+.Product:hover{
+     box-shadow: 5px 5px 4px rgb(60, 65, 1);
+     transform: translateY(-5px);
+    transition-duration: 2s;
+    transition:ease-in-out;
+}
+p{
+    padding: 8px;
+}
+.Box{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    padding: 5px;
+}
+h1{
+    position: relative;
+    bottom: 10px;
+    color: black;
+    padding: 2px;
+    font-size: 28px;
+}
+.Product h4{
+    color: gray;
+    position: relative;
+    bottom: 4px;
+    left: 4px;
+}
+.clicked {
+   background-color:rgba(222, 230, 201, 0.66);
+    padding: 5px;
+    color: rgb(49, 49, 49);
+    margin: 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px ;
+}
+/* Base container layout styling helper */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* Default state for the category elements */
+.category-item-tab {
+  padding: 10px 20px;
+  background-color: #b6ec6061; /* Subtle grey background */
+  color: rgb(11, 11, 11);            /* Dull slate grey text */
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+  box-shadow: 2px 2px 2px;
+  transition: all 0.2s ease-in-out; /* Allows you to watch the fade color shift */
+}
+
+/* Hover style (Fires only when tab is unselected) */
+.category-item-tab:hover {
+  background-color: #668914;
+  color: #0b0b0b;
+ transform: translateY(-2px);
+    box-shadow: 2px 5px 2px ;
+}
+
+/* ACTIVE PRESSED TOGGLED COLOR (Striking Emerald Accent) */
+.category-item-tab.active-category-tab {
+  background-color: #b8f65b; /* High visibility green background */
+  color: #000000;            /* White text */
+     /* Darker green border frame */
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(3, 73, 50, 0.3); /* Distinct outer glow styling */
+  transform: translateY(-1px);
+}
+
+/* Shrunk physical click impression effect */
+.category-item-tab:active {
+  transform: scale(0.96);
+}
+
+h3{
+    color: black;
+    position: relative;
+    bottom: 5px;
+    left: 90px;
+}
+.categories{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+    position: relative;
+    top:-2px;
+    margin: 0px;
+    padding: 5px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color:rgba(209, 240, 131, 0.66) ;
+    width: 200vh;
+    height: 100%;
+}
+.Filter{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(59, 74, 3, 0.812);
+}
+.catname{
+    background-color:rgba(168, 228, 14, 0.66);
+    padding: 5px;
+    color: rgb(49, 49, 49);
+    margin: 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px ;
+}
